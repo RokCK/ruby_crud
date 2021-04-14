@@ -1,0 +1,14 @@
+.jumbotron
+  %h1.display-4
+    = @friend.first_name
+    = @friend.last_name
+  %p.lead
+    = @friend.email
+    %br/
+    = @friend.phone
+    | #{@friend.twitter}
+  %hr.my-4/
+  %br/
+  = link_to 'Editar', edit_friend_path(@friend), class:"btn btn-secondary"
+  = link_to 'Atrás', friends_path, class:"btn btn-dark"
+

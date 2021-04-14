@@ -1,0 +1,6 @@
+%h1 Editar Amigo
+%br/
+= render 'form', friend: @friend
+%br/
+= link_to 'Mostrar Amigo', @friend, class:"btn btn-secondary"
+= link_to 'Atrás', friends_path, class:"btn btn-dark"

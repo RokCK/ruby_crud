@@ -1,0 +1,13 @@
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  = link_to 'RubyCrud', root_path, class:"navbar-brand"
+  / a class="navbar-brand" href="#">RubyCrud</a
+  %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto
+      %li.nav-item
+        = link_to "Acerca de", home_about_path, class:"nav-link"
+      %li.nav-item
+        = link_to "Lista de Amigos", friends_path, class:"nav-link"
+      %li.nav-item
+        = link_to "Agregar Amigo", new_friend_path, class:"nav-link"
